@@ -1,2 +1,2 @@
-# Glazes-
-Clothing Ecommerce Website information and data's process  
+# Glazes-Ecommerce Website 
+Clothing, information and data's process  
