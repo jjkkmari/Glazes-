@@ -1,59 +1,28 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <title>My page title</title>
-  
-  <!-- Google Fonts --> 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="styles.css"> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glazes — Where Every Price Is Ice</title>
 
-  <!-- Table Icons --> 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
-  
- </head>
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
- 
- <body>
-  <!-- Here is our main header that is used across all the pages of our website -->
+<body>
 
-  <header>
-   <h1>Glazez</h1>
-  </header>
-
- 
-
-  <!-- Here is our page's main content -->
-  <main>
-
-   <!-- It contains an article -->
-   <article>
-    <h2>Expressive serving.</h2>
-
-    <p> Glazes isnt about being loud. Its minimal-high-quailty, essential designs. Polished to evevate your day-to-day aesthetics.
-    ending with effortless edges and finishing trends. Either with intentions or demanding refined comfort. Glazes can be you new outer layer 
-    for stepping in, layering up or leaving your mark. Come check Glazes. Where every price is ice.</p>
-
-    <h3>Subsection</h3>
-
-    <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
-
-    <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-
-    <h3>Another subsection</h3>
-
-    <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-    <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-   </article>
-
-   <!-- the aside content can also be nested within the main content -->
-   <nav class="site-nav">
+  <!-- ══════════════════════════
+       NAV
+  ══════════════════════════ -->
+  <nav class="site-nav">
     <a href="home.html" class="nav-logo">Glaz<span>es</span></a>
- 
+
     <ul class="nav-links">
       <li><a href="home.html" class="active">Home</a></li>
       <li><a href="#">New In</a></li>
@@ -63,11 +32,11 @@
       <li><a href="#">Our Team</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
- 
+
     <div class="nav-right">
       <form class="nav-search" role="search">
         <i class="ti ti-search" aria-hidden="true"></i>
-        <input type="search" name="q" placeholder="Search query" aria-label="Search" />
+        <input type="search" name="q" placeholder="Search query" aria-label="Search">
         <button type="submit" style="background:none;border:none;color:var(--gray-mid);font-size:12px;font-weight:500;cursor:pointer;padding:0;">Go</button>
       </form>
       <button class="nav-icon-btn" aria-label="Wishlist">
@@ -82,7 +51,7 @@
       </button>
     </div>
   </nav>
- 
+
   <!-- ══════════════════════════
        ANNOUNCEMENT BAND
   ══════════════════════════ -->
@@ -100,183 +69,182 @@
       <span>Where every price is ice</span>
     </div>
   </div>
- 
+
   <!-- ══════════════════════════
-       HERO
+       MAIN CONTENT
   ══════════════════════════ -->
-  <section class="hero">
-    <div class="hero-text">
-      <p class="hero-eyebrow">New Arrival — SS26 Collection</p>
-      <h1 class="hero-title">Expressive.<br><em>Effortless.</em><br>Every day.</h1>
-      <p class="hero-sub">Minimal-high-quality, essential designs. Polished to elevate your day-to-day aesthetic — because every price is ice.</p>
-      <div class="hero-cta">
-        <button class="btn-primary">Shop Now</button>
-        <button class="btn-outline">View Lookbook</button>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">New Arrival — SS26 Collection</p>
+        <h1 class="hero-title">Expressive.<br><em>Effortless.</em><br>Every day.</h1>
+        <p class="hero-sub">Minimal-high-quality, essential designs. Polished to elevate your day-to-day aesthetic — because every price is ice.</p>
+        <div class="hero-cta">
+          <button class="btn-primary">Shop Now</button>
+          <button class="btn-outline">View Lookbook</button>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual-emoji">👗</div>
+        <div class="hero-badge">NEW<br>DROP</div>
+        <div class="hero-tag">
+          <strong>Signature Midi Dress</strong>
+          <span class="price">$89</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="section" style="padding-top: 40px;">
+      <div class="section-header">
+        <h2 class="section-title">Shop by Category</h2>
+      </div>
+      <div class="cat-grid">
+        <a href="#" class="cat-card">
+          <div class="cat-icon">👗</div>
+          <div class="cat-label">Dresses</div>
+        </a>
+        <a href="#" class="cat-card">
+          <div class="cat-icon">🧥</div>
+          <div class="cat-label">Outerwear</div>
+        </a>
+        <a href="#" class="cat-card">
+          <div class="cat-icon">👚</div>
+          <div class="cat-label">Tops</div>
+        </a>
+        <a href="#" class="cat-card">
+          <div class="cat-icon">👖</div>
+          <div class="cat-label">Bottoms</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- NEW IN — PRODUCT GRID -->
+    <section class="section" style="padding-top: 40px;">
+      <div class="section-header">
+        <h2 class="section-title">New In</h2>
+        <a href="#" class="section-link">View all →</a>
+      </div>
+      <div class="product-grid">
+
+        <!-- Card 1 -->
+        <article class="product-card">
+          <div class="product-img" style="background: var(--pink-light);">
+            👗
+            <button class="wishlist-btn" aria-label="Add Signature Midi Dress to wishlist">
+              <i class="ti ti-heart"></i>
+            </button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Glazes</p>
+            <p class="product-name">Signature Midi Dress</p>
+            <div class="product-pricing">
+              <span class="product-price">$89</span>
+              <span class="product-old">$120</span>
+            </div>
+            <span class="badge badge-sale">25% off</span>
+            <div class="swatches" aria-label="Available colours">
+              <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
+              <div class="swatch" style="background:#26215c;" title="Navy"></div>
+              <div class="swatch" style="background:#f1efe8; border-color:#ccc;" title="Cream"></div>
+            </div>
+            <button class="quick-add">+ Quick Add</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <div class="product-img" style="background: #eeedfe;">
+            🧥
+            <button class="wishlist-btn" aria-label="Add Structured Blazer to wishlist">
+              <i class="ti ti-heart"></i>
+            </button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Glazes</p>
+            <p class="product-name">Structured Blazer</p>
+            <div class="product-pricing">
+              <span class="product-price">$112</span>
+            </div>
+            <div class="swatches" aria-label="Available colours">
+              <div class="swatch" style="background:#888780;" title="Grey"></div>
+              <div class="swatch" style="background:#26215c;" title="Navy"></div>
+            </div>
+            <button class="quick-add">+ Quick Add</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <div class="product-img" style="background: #e1f5ee;">
+            👚
+            <button class="wishlist-btn" aria-label="Add Ribbed Crop Top to wishlist">
+              <i class="ti ti-heart"></i>
+            </button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Glazes</p>
+            <p class="product-name">Ribbed Crop Top</p>
+            <div class="product-pricing">
+              <span class="product-price">$38</span>
+            </div>
+            <span class="badge badge-new">New</span>
+            <div class="swatches" aria-label="Available colours">
+              <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
+              <div class="swatch" style="background:#5dcaa5;" title="Sage"></div>
+              <div class="swatch" style="background:#fff; border-color:#ccc;" title="White"></div>
+            </div>
+            <button class="quick-add">+ Quick Add</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card">
+          <div class="product-img" style="background: #faeeda;">
+            👖
+            <button class="wishlist-btn" aria-label="Add Wide Leg Trousers to wishlist">
+              <i class="ti ti-heart"></i>
+            </button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Glazes</p>
+            <p class="product-name">Wide Leg Trousers</p>
+            <div class="product-pricing">
+              <span class="product-price">$74</span>
+              <span class="product-old">$95</span>
+            </div>
+            <span class="badge badge-sale">22% off</span>
+            <div class="swatches" aria-label="Available colours">
+              <div class="swatch" style="background:#d3d1c7;" title="Stone"></div>
+              <div class="swatch" style="background:#3c3489;" title="Indigo"></div>
+            </div>
+            <button class="quick-add">+ Quick Add</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROMO BANNERS -->
+    <div class="promo-grid">
+      <div class="promo-card pink">
+        <p class="promo-eyebrow">Limited time</p>
+        <h3 class="promo-title">End of Season Sale<br>Up to 40% off</h3>
+        <p class="promo-desc">Finishing edges, effortless style — at ice prices.</p>
+        <button class="btn-sm btn-sm-pink" style="align-self:flex-start; margin-top: 6px;">Shop Sale</button>
+      </div>
+      <div class="promo-card dark">
+        <p class="promo-eyebrow">Our Story</p>
+        <h3 class="promo-title">Where every price<br>is ice.</h3>
+        <p class="promo-desc">Glazes isn't about being loud. Polished, minimal, essential designs for every day.</p>
+        <button class="btn-sm btn-sm-white" style="align-self:flex-start; margin-top: 6px;">Meet the Team</button>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-visual-emoji">👗</div>
-      <div class="hero-badge">NEW<br>DROP</div>
-      <div class="hero-tag">
-        <strong>Signature Midi Dress</strong>
-        <span class="price">$89</span>
-      </div>
-    </div>
-  </section>
- 
-  <!-- ══════════════════════════
-       SHOP BY CATEGORY
-  ══════════════════════════ -->
-  <section class="section" style="padding-top: 40px;">
-    <div class="section-header">
-      <h2 class="section-title">Shop by Category</h2>
-    </div>
-    <div class="cat-grid">
-      <a href="#" class="cat-card">
-        <div class="cat-icon">👗</div>
-        <div class="cat-label">Dresses</div>
-      </a>
-      <a href="#" class="cat-card">
-        <div class="cat-icon">🧥</div>
-        <div class="cat-label">Outerwear</div>
-      </a>
-      <a href="#" class="cat-card">
-        <div class="cat-icon">👚</div>
-        <div class="cat-label">Tops</div>
-      </a>
-      <a href="#" class="cat-card">
-        <div class="cat-icon">👖</div>
-        <div class="cat-label">Bottoms</div>
-      </a>
-    </div>
-  </section>
- 
-  <!-- ══════════════════════════
-       NEW IN — PRODUCT GRID
-  ══════════════════════════ -->
-  <section class="section" style="padding-top: 40px;">
-    <div class="section-header">
-      <h2 class="section-title">New In</h2>
-      <a href="#" class="section-link">View all →</a>
-    </div>
-    <div class="product-grid">
- 
-      <!-- Card 1 -->
-      <article class="product-card">
-        <div class="product-img" style="background: var(--pink-light);">
-          👗
-          <button class="wishlist-btn" aria-label="Add Signature Midi Dress to wishlist">
-            <i class="ti ti-heart"></i>
-          </button>
-        </div>
-        <div class="product-body">
-          <p class="product-brand">Glazes</p>
-          <p class="product-name">Signature Midi Dress</p>
-          <div class="product-pricing">
-            <span class="product-price">$89</span>
-            <span class="product-old">$120</span>
-          </div>
-          <span class="badge badge-sale">25% off</span>
-          <div class="swatches" aria-label="Available colours">
-            <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
-            <div class="swatch" style="background:#26215c;" title="Navy"></div>
-            <div class="swatch" style="background:#f1efe8; border-color:#ccc;" title="Cream"></div>
-          </div>
-          <button class="quick-add">+ Quick Add</button>
-        </div>
-      </article>
- 
-      <!-- Card 2 -->
-      <article class="product-card">
-        <div class="product-img" style="background: #eeedfe;">
-          🧥
-          <button class="wishlist-btn" aria-label="Add Structured Blazer to wishlist">
-            <i class="ti ti-heart"></i>
-          </button>
-        </div>
-        <div class="product-body">
-          <p class="product-brand">Glazes</p>
-          <p class="product-name">Structured Blazer</p>
-          <div class="product-pricing">
-            <span class="product-price">$112</span>
-          </div>
-          <div class="swatches" aria-label="Available colours">
-            <div class="swatch" style="background:#888780;" title="Grey"></div>
-            <div class="swatch" style="background:#26215c;" title="Navy"></div>
-          </div>
-          <button class="quick-add">+ Quick Add</button>
-        </div>
-      </article>
- 
-      <!-- Card 3 -->
-      <article class="product-card">
-        <div class="product-img" style="background: #e1f5ee;">
-          👚
-          <button class="wishlist-btn" aria-label="Add Ribbed Crop Top to wishlist">
-            <i class="ti ti-heart"></i>
-          </button>
-        </div>
-        <div class="product-body">
-          <p class="product-brand">Glazes</p>
-          <p class="product-name">Ribbed Crop Top</p>
-          <div class="product-pricing">
-            <span class="product-price">$38</span>
-          </div>
-          <span class="badge badge-new">New</span>
-          <div class="swatches" aria-label="Available colours">
-            <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
-            <div class="swatch" style="background:#5dcaa5;" title="Sage"></div>
-            <div class="swatch" style="background:#fff; border-color:#ccc;" title="White"></div>
-          </div>
-          <button class="quick-add">+ Quick Add</button>
-        </div>
-      </article>
- 
-      <!-- Card 4 -->
-      <article class="product-card">
-        <div class="product-img" style="background: #faeeda;">
-          👖
-          <button class="wishlist-btn" aria-label="Add Wide Leg Trousers to wishlist">
-            <i class="ti ti-heart"></i>
-          </button>
-        </div>
-        <div class="product-body">
-          <p class="product-brand">Glazes</p>
-          <p class="product-name">Wide Leg Trousers</p>
-          <div class="product-pricing">
-            <span class="product-price">$74</span>
-            <span class="product-old">$95</span>
-          </div>
-          <span class="badge badge-sale">22% off</span>
-          <div class="swatches" aria-label="Available colours">
-            <div class="swatch" style="background:#d3d1c7;" title="Stone"></div>
-            <div class="swatch" style="background:#3c3489;" title="Indigo"></div>
-          </div>
-          <button class="quick-add">+ Quick Add</button>
-        </div>
-      </article>
- 
-    </div>
-  </section>
- 
-  <!-- ══════════════════════════
-       PROMO BANNERS
-  ══════════════════════════ -->
-  <div class="promo-grid">
-    <div class="promo-card pink">
-      <p class="promo-eyebrow">Limited time</p>
-      <h3 class="promo-title">End of Season Sale<br>Up to 40% off</h3>
-      <p class="promo-desc">Finishing edges, effortless style — at ice prices.</p>
-      <button class="btn-sm btn-sm-pink" style="align-self:flex-start; margin-top: 6px;">Shop Sale</button>
-    </div>
-    <div class="promo-card dark">
-      <p class="promo-eyebrow">Our Story</p>
-      <h3 class="promo-title">Where every price<br>is ice.</h3>
-      <p class="promo-desc">Glazes isn't about being loud. Polished, minimal, essential designs for every day.</p>
-      <button class="btn-sm btn-sm-white" style="align-self:flex-start; margin-top: 6px;">Meet the Team</button>
-    </div>
-  </div>
- 
+
+  </main>
+
   <!-- ══════════════════════════
        FOOTER
   ══════════════════════════ -->
@@ -327,7 +295,7 @@
         </nav>
       </div>
     </div>
- 
+
     <div class="footer-bottom">
       <span>© 2026 Glazes. All rights reserved.</span>
       <span>
@@ -336,6 +304,6 @@
       </span>
     </div>
   </footer>
- 
+
 </body>
 </html>
