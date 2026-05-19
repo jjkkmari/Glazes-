@@ -1,11 +1,11 @@
 /* || General setup */
 
-html, body {
+index.html, body {
   margin: 0;
   padding: 0;
 }
 
-html {
+index.html {
   font-size: 10px;
   background-color: #a9a9a9;
 }
