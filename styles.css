@@ -138,9 +138,11 @@ footer {
 .products-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
+    gap: 30px;
+    justify-content: center; 
+    width: 100%; 
+    margin-top: 40px; 
+    clear: both;
 }
 
 .product-card {
@@ -149,7 +151,32 @@ footer {
     padding: 20px;
     width: 250px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 4px; 
+} 
+
+.products-header { 
+    text-align: center; 
+    margin: 40px auto 20px auto; 
+    max-width: 600px; 
+} 
+
+#search-input { 
+    padding: 10px 15px; 
+    width: 250px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-family: 'Open Sans condensed', sans-serif; 
+} 
+
+#search-form { 
+    margin-top: 15px; 
+    display: inline-block;
+}
+
+.product-icon {
+    font-size: 4rem; /* Makes the icon nice and big */
+    line-height: 250px; /* Vertically centers it perfectly in your 250px box */
+    display: block;
 }
 
 .product-image-placeholder {
@@ -160,11 +187,6 @@ footer {
     border-radius: 2px;
 } 
 
-.product-icon {
-    font-size: 4rem; /* Makes the icon nice and big */
-    line-height: 250px; /* Vertically centers it perfectly in your 250px box */
-    display: block;
-}
 
 .price {
     font-weight: bold;
