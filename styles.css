@@ -158,6 +158,12 @@ footer {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 2px;
+} 
+
+.product-icon {
+    font-size: 4rem; /* Makes the icon nice and big */
+    line-height: 250px; /* Vertically centers it perfectly in your 250px box */
+    display: block;
 }
 
 .price {
