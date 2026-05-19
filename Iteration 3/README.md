@@ -34,6 +34,7 @@ and feedback. using Scrum, Kanban's meeting customer needs helping us to enhance
 | **Jazmyne Kingi** | Backend Support | Assisted with initial repository structure and version control management. | **Completed** |
 | **Group Collaboration** | Testing Specialists | Executed User Acceptance Testing (UAT), tracked bugs, and verified responsiveness. | **Completed** |
 
+
 ---- 
 6. ## Project Status
  ### Current Status: 🟢 Completed & Live
