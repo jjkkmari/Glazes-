@@ -1,309 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+ <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glazes — Where Every Price Is Ice</title>
+  <title>My page title</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+ </head>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ <body>
+  <!-- Here is our main header that is used across all the pages of our website -->
 
-  <!-- Tabler Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <header>
+   <h1>Header</h1>
+  </header>
 
-  <!-- Your stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <nav>
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Our team</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+   </ul>
 
-<body>
+    <!-- A Search form is another common non-linear way to navigate through a website. -->
 
-  <!-- ══════════════════════════
-       NAV
-  ══════════════════════════ -->
-  <nav class="site-nav">
-    <a href="home.html" class="nav-logo">Glaz<span>es</span></a>
+    <form>
+     <input type="search" name="q" placeholder="Search query">
+     <input type="submit" value="Go!">
+    </form>
+   </nav>
 
-    <ul class="nav-links">
-      <li><a href="home.html" class="active">Home</a></li>
-      <li><a href="#">New In</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Sale</a></li>
-      <li><a href="#">Our Team</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-
-    <div class="nav-right">
-      <form class="nav-search" role="search">
-        <i class="ti ti-search" aria-hidden="true"></i>
-        <input type="search" name="q" placeholder="Search query" aria-label="Search">
-        <button type="submit" style="background:none;border:none;color:var(--gray-mid);font-size:12px;font-weight:500;cursor:pointer;padding:0;">Go</button>
-      </form>
-      <button class="nav-icon-btn" aria-label="Wishlist">
-        <i class="ti ti-heart"></i>
-      </button>
-      <button class="nav-icon-btn" aria-label="Shopping bag" style="position:relative;">
-        <i class="ti ti-shopping-bag"></i>
-        <span class="cart-badge" aria-label="2 items in cart">2</span>
-      </button>
-      <button class="nav-icon-btn" aria-label="Account">
-        <i class="ti ti-user"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ══════════════════════════
-       ANNOUNCEMENT BAND
-  ══════════════════════════ -->
-  <div class="band" aria-label="Site announcements">
-    <div class="band-track" aria-hidden="true">
-      <span>Free shipping over $60</span>
-      <span>New drops every Friday</span>
-      <span>Easy 30-day returns</span>
-      <span>Sustainably made</span>
-      <span>Where every price is ice</span>
-      <span>Free shipping over $60</span>
-      <span>New drops every Friday</span>
-      <span>Easy 30-day returns</span>
-      <span>Sustainably made</span>
-      <span>Where every price is ice</span>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════
-       MAIN CONTENT
-  ══════════════════════════ -->
+  <!-- Here is our page's main content -->
   <main>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <p class="hero-eyebrow">New Arrival — SS26 Collection</p>
-        <h1 class="hero-title">Expressive.<br><em>Effortless.</em><br>Every day.</h1>
-        <p class="hero-sub">Minimal-high-quality, essential designs. Polished to elevate your day-to-day aesthetic — because every price is ice.</p>
-        <div class="hero-cta">
-          <button class="btn-primary">Shop Now</button>
-          <button class="btn-outline">View Lookbook</button>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-visual-emoji">👗</div>
-        <div class="hero-badge">NEW<br>DROP</div>
-        <div class="hero-tag">
-          <strong>Signature Midi Dress</strong>
-          <span class="price">$89</span>
-        </div>
-      </div>
-    </section>
+   <!-- It contains an article -->
+   <article>
+    <h2>Article heading</h2>
 
-    <!-- SHOP BY CATEGORY -->
-    <section class="section" style="padding-top: 40px;">
-      <div class="section-header">
-        <h2 class="section-title">Shop by Category</h2>
-      </div>
-      <div class="cat-grid">
-        <a href="#" class="cat-card">
-          <div class="cat-icon">👗</div>
-          <div class="cat-label">Dresses</div>
-        </a>
-        <a href="#" class="cat-card">
-          <div class="cat-icon">🧥</div>
-          <div class="cat-label">Outerwear</div>
-        </a>
-        <a href="#" class="cat-card">
-          <div class="cat-icon">👚</div>
-          <div class="cat-label">Tops</div>
-        </a>
-        <a href="#" class="cat-card">
-          <div class="cat-icon">👖</div>
-          <div class="cat-label">Bottoms</div>
-        </a>
-      </div>
-    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-    <!-- NEW IN — PRODUCT GRID -->
-    <section class="section" style="padding-top: 40px;">
-      <div class="section-header">
-        <h2 class="section-title">New In</h2>
-        <a href="#" class="section-link">View all →</a>
-      </div>
-      <div class="product-grid">
+    <h3>Subsection</h3>
 
-        <!-- Card 1 -->
-        <article class="product-card">
-          <div class="product-img" style="background: var(--pink-light);">
-            👗
-            <button class="wishlist-btn" aria-label="Add Signature Midi Dress to wishlist">
-              <i class="ti ti-heart"></i>
-            </button>
-          </div>
-          <div class="product-body">
-            <p class="product-brand">Glazes</p>
-            <p class="product-name">Signature Midi Dress</p>
-            <div class="product-pricing">
-              <span class="product-price">$89</span>
-              <span class="product-old">$120</span>
-            </div>
-            <span class="badge badge-sale">25% off</span>
-            <div class="swatches" aria-label="Available colours">
-              <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
-              <div class="swatch" style="background:#26215c;" title="Navy"></div>
-              <div class="swatch" style="background:#f1efe8; border-color:#ccc;" title="Cream"></div>
-            </div>
-            <button class="quick-add">+ Quick Add</button>
-          </div>
-        </article>
+    <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
-        <!-- Card 2 -->
-        <article class="product-card">
-          <div class="product-img" style="background: #eeedfe;">
-            🧥
-            <button class="wishlist-btn" aria-label="Add Structured Blazer to wishlist">
-              <i class="ti ti-heart"></i>
-            </button>
-          </div>
-          <div class="product-body">
-            <p class="product-brand">Glazes</p>
-            <p class="product-name">Structured Blazer</p>
-            <div class="product-pricing">
-              <span class="product-price">$112</span>
-            </div>
-            <div class="swatches" aria-label="Available colours">
-              <div class="swatch" style="background:#888780;" title="Grey"></div>
-              <div class="swatch" style="background:#26215c;" title="Navy"></div>
-            </div>
-            <button class="quick-add">+ Quick Add</button>
-          </div>
-        </article>
+    <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
 
-        <!-- Card 3 -->
-        <article class="product-card">
-          <div class="product-img" style="background: #e1f5ee;">
-            👚
-            <button class="wishlist-btn" aria-label="Add Ribbed Crop Top to wishlist">
-              <i class="ti ti-heart"></i>
-            </button>
-          </div>
-          <div class="product-body">
-            <p class="product-brand">Glazes</p>
-            <p class="product-name">Ribbed Crop Top</p>
-            <div class="product-pricing">
-              <span class="product-price">$38</span>
-            </div>
-            <span class="badge badge-new">New</span>
-            <div class="swatches" aria-label="Available colours">
-              <div class="swatch" style="background:#d43f8d;" title="Pink"></div>
-              <div class="swatch" style="background:#5dcaa5;" title="Sage"></div>
-              <div class="swatch" style="background:#fff; border-color:#ccc;" title="White"></div>
-            </div>
-            <button class="quick-add">+ Quick Add</button>
-          </div>
-        </article>
+    <h3>Another subsection</h3>
 
-        <!-- Card 4 -->
-        <article class="product-card">
-          <div class="product-img" style="background: #faeeda;">
-            👖
-            <button class="wishlist-btn" aria-label="Add Wide Leg Trousers to wishlist">
-              <i class="ti ti-heart"></i>
-            </button>
-          </div>
-          <div class="product-body">
-            <p class="product-brand">Glazes</p>
-            <p class="product-name">Wide Leg Trousers</p>
-            <div class="product-pricing">
-              <span class="product-price">$74</span>
-              <span class="product-old">$95</span>
-            </div>
-            <span class="badge badge-sale">22% off</span>
-            <div class="swatches" aria-label="Available colours">
-              <div class="swatch" style="background:#d3d1c7;" title="Stone"></div>
-              <div class="swatch" style="background:#3c3489;" title="Indigo"></div>
-            </div>
-            <button class="quick-add">+ Quick Add</button>
-          </div>
-        </article>
+    <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
 
-      </div>
-    </section>
+    <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+   </article>
 
-    <!-- PROMO BANNERS -->
-    <div class="promo-grid">
-      <div class="promo-card pink">
-        <p class="promo-eyebrow">Limited time</p>
-        <h3 class="promo-title">End of Season Sale<br>Up to 40% off</h3>
-        <p class="promo-desc">Finishing edges, effortless style — at ice prices.</p>
-        <button class="btn-sm btn-sm-pink" style="align-self:flex-start; margin-top: 6px;">Shop Sale</button>
-      </div>
-      <div class="promo-card dark">
-        <p class="promo-eyebrow">Our Story</p>
-        <h3 class="promo-title">Where every price<br>is ice.</h3>
-        <p class="promo-desc">Glazes isn't about being loud. Polished, minimal, essential designs for every day.</p>
-        <button class="btn-sm btn-sm-white" style="align-self:flex-start; margin-top: 6px;">Meet the Team</button>
-      </div>
-    </div>
+   <!-- the aside content can also be nested within the main content -->
+   <aside>
+    <h2>Related</h2>
+
+    <ul>
+     <li><a href="#">Oh I do like to be beside the seaside</a></li>
+     <li><a href="#">Oh I do like to be beside the sea</a></li>
+     <li><a href="#">Although in the North of England</a></li>
+     <li><a href="#">It never stops raining</a></li>
+     <li><a href="#">Oh well...</a></li>
+    </ul>
+   </aside>
 
   </main>
 
-  <!-- ══════════════════════════
-       FOOTER
-  ══════════════════════════ -->
-  <footer>
-    <div class="footer-grid">
-      <!-- Brand -->
-      <div>
-        <div class="footer-logo">Glaz<span>es</span></div>
-        <p class="footer-tagline">Minimal-high-quality, essential designs. Polished to elevate your day-to-day aesthetic.</p>
-        <div class="footer-social" aria-label="Social media links">
-          <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-          <a href="#" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="ti ti-brand-pinterest"></i></a>
-          <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
-        </div>
-      </div>
-      <!-- Shop -->
-      <div>
-        <p class="footer-col-title">Shop</p>
-        <nav class="footer-links" aria-label="Shop links">
-          <a href="#">New In</a>
-          <a href="#">Dresses</a>
-          <a href="#">Outerwear</a>
-          <a href="#">Tops</a>
-          <a href="#">Bottoms</a>
-          <a href="#">Sale</a>
-        </nav>
-      </div>
-      <!-- Help -->
-      <div>
-        <p class="footer-col-title">Help</p>
-        <nav class="footer-links" aria-label="Help links">
-          <a href="#">Contact Us</a>
-          <a href="#">Returns</a>
-          <a href="#">Sizing Guide</a>
-          <a href="#">Shipping Info</a>
-          <a href="#">FAQ</a>
-        </nav>
-      </div>
-      <!-- Company -->
-      <div>
-        <p class="footer-col-title">Company</p>
-        <nav class="footer-links" aria-label="Company links">
-          <a href="#">Our Team</a>
-          <a href="#">About Glazes</a>
-          <a href="#">Projects</a>
-          <a href="#">Sustainability</a>
-        </nav>
-      </div>
-    </div>
+  <!-- And here is our main footer that is used across all the pages of our website -->
 
-    <div class="footer-bottom">
-      <span>© 2026 Glazes. All rights reserved.</span>
-      <span>
-        <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
-        <a href="#">Terms of Use</a>
-      </span>
-    </div>
+  <footer>
+   <p>©Copyright 2050 by nobody. All rights reversed.</p>
   </footer>
 
-</body>
+ </body>
 </html>
+     
+    
