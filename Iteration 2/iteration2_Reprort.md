@@ -11,7 +11,7 @@ The primary focus of Iteration 2, from foundational concepts into a structured p
 * **Course Code:** ITPM5.248 Agile Projects
 * **Sponsor:** Janet Jack
 * **Project Lead:** Jazmyne Kingi
-* **Iteration 2:** 04/05/2026 
+* **Iteration 2: DeadLine** 30/04/2026
 
 ---  
 
