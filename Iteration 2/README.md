@@ -8,7 +8,9 @@ Welcome to the Iteration 2 project documentations. This file ourlines the planni
 
 * **Sponsor:** Janet Jack
 * **Project Lead:** Jazmyne Kingi
-* **Iteration 2 Deadline:** 30/04/2026 
+* **Iteration 2 Deadline:** 30/04/2026
+* **Atendees:** Jazmyne .K
+* **Absent:** None 
 
 --- 
 
