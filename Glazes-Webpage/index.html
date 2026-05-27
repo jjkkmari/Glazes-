@@ -1,98 +1,190 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Glazes</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="styles.css">
- </head>
+<html lang="en">
 
- <body>
-  <!-- Here is our main header that is used across all the pages of our website -->
-
-  <header>
-   <h1>Glazes </h1>
-  </header>
-
-  <nav>
-   <ul>
-    <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="orders.html" class="active">Orders</a></li>
-   </ul>
-
-    <!-- A Search form is another common non-linear way to navigate through a website. -->
-
-    <form>
-     <input type="search" name="q" placeholder="Search query">
-     <input type="submit" value="Go!">
-    </form>
-   </nav>
-
-  <!-- Here is our page's main content -->
-  <main>
-
-   <!-- It contains an article -->
-   <article>
-    <h2>Serving experiance </h2>
-
-    <p> Glazes isn’t about being loud; it’s about making a statement without the noise. 
-    Our minimal, high-quality essential designs are crafted to elevate your day-to-day aesthetic, 
-    blending timeless silhouettes with an effortless edge. </p>
-
-
-    <p>Whether you’re dressing with strict intention or looking for premium, refined comfort, 
-    Glazes is made for stepping in, layering up, and leaving your mark. Come explore the collection—where 
-    the style is premium, and every price is ice.
-</p> 
-
-    <h2> The Art of the Finish. <h2> 
-     
-     <p>True style speaks for itself. At Glazes, we specialize in minimal, high-quality designs that redefine 
-    your everyday wardrobe. We bring you polished essentials engineered for refined comfort and an effortless edge.</p>
-
-     <p>This is your new outer layer of pure confidence. Designed for stepping in, layering up, and making an impact, 
-    Glazes is the ultimate upgrade your closet needs. Dive into the drop today—where the aesthetic is premium, and every price is ice.</p>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Glazes, Clothing, E-Commerce, Fashion" />
+  <meta name="description" content="Glazes - Premium Clothing Ecommerce Store" />
+  <meta name="author" content="Glazes" />
   
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <h3>Serving looks. No Noise</h3>
+  <title>About Glazes</title>
 
-    <p>Glazes isn’t about shouting for attention. It’s about minimal, high-quality essentials designed to 
-    seamlessly elevate your daily rotation. We bridge the gap between premium comfort and effortless, contemporary style.</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <p>Every piece is built for those who dress with purpose. Step in, layer up, and leave your mark with wardrobe 
-    upgrades that refuse to blend into the background. Come check out Glazes—where the fits are clean, and every price is ice.
-</p>
-   </article>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-   <!-- the aside content can also be nested within the main content -->
-   <aside>
-    <h2>Related</h2>
+  <link href="Fonts/font-awesome.min.css" rel="stylesheet" />
 
-    <ul>
-     <li><a href="#">Womens</a></li>
-     <li><a href="#">Men</a></li>
-     <li><a href="#">Kids</a></li>
-     <li><a href="#">Hot deals</a></li>
-     <li><a href="#">Best Sellers</a></li>
-    </ul>
-   </aside>
+  <link href="styles.css" rel="stylesheet" /> 
 
-  </main>
+</head>
 
-  <!-- And here is our main footer that is used across all the pages of our website -->
+<body>
 
-  <footer>
-   <p>©Copyright 2050 by nobody. All rights reversed.</p>
+  <div class="hero_area">
+    <div class="hero_social">
+      <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>Glazes</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">Orders</a>
+              </li>
+            </ul>
+            
+            <div class="user_option-box">
+              <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="img-box">
+            <img src="images/about-store.jpg" alt="About Glazes Store Front">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>Our Story</h2>
+            </div>
+            <p>
+              Welcome to Glazes. We are a premier e-commerce clothing destination dedicated to bringing you style, quality, and comfort. Our collections are mindfully curated to offer modern trends while focusing on premium materials and sustainable practices. 
+            </p>
+            <p>
+              Whether you are searching for everyday essentials or statement pieces, Glazes aims to provide seamless fashion that makes you feel confident and authentic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Why Choose Glazes?</h2>
+        <p>We pride ourselves on delivery standards that elevate your online shopping experience.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/quality-icon.png" alt="Premium Quality Icon">
+            </div>
+            <div class="detail-box">
+              <h5>Premium Quality</h5>
+              <p>Every garment is crafted from carefully selected textiles to ensure durability and style.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/eco-icon.png" alt="Sustainability Icon">
+            </div>
+            <div class="detail-box">
+              <h5>Mindfully Made</h5>
+              <p>We focus on ethical manufacturing processes and eco-friendly packaging options.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/shipping-icon.png" alt="Shipping Icon">
+            </div>
+            <div class="detail-box">
+              <h5>Fast Delivery</h5>
+              <p>Reliable shipping straight to your door with simple, stress-free order tracking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <h4>Glazes</h4>
+            <p>Redefining your digital wardrobe with simplicity, elegance, and intentional design.</p>
+            <div class="footer_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>Contact Details</h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>New Zealand</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>support@glazesclothing.co.nz</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>Newsletter</h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email address" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span>2026</span> All Rights Reserved By Glazes Store</p>
+      </div>
+    </div>
   </footer>
 
- </body>
+</body>
 </html>
-     
-``).    
-
-
-
-
-
-

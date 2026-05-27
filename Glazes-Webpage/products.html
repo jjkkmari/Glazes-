@@ -1,152 +1,296 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-  <meta charset="utf-8"> 
-  <title>Products</title> 
-  <link href="https://fonts.google.com/css?family=OpenSans+Condenseed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles.css">
-  </head>  
-
-  <body> 
-   <header> 
-   <h1> Glazes</h1>    
-   </header>  
-
-    <nav> 
-    <ul> 
-    <li><a href="index.html">Home</a></li>  
-      <li><a href=products.html class="active">Products</a></li> 
-      <li><a href="orders.html">Orders</a></li>     
-    </ul> 
-    </nav> 
-
-    <main>  
-    <section class="products-header"> 
-    <h2> The Latests Drop</h2> 
-    <p class="section-intro"> Premiun essentials, 
-      engineered for the perfect fit.</p> 
-
-
-      <form id="search-form" onsubmit="return false;">
-    <input type="search" id="search-input" name="q" placeholder="Search query...">
-    <input type="submit" value="Go!">
-</form>
-    </section>
-
-      <section class="products-grid">
-            
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                    <span class="product-icon">🧥</span>
-                  </div>
-                <h3 class="product-title">Oversized Heavyweight Hoodie</h3>
-                <p class="price">$110.00</p>
-                <button class="action-btn">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                  <span class="product-icon">👕</span>
-                </div>
-                <h3 class="product-title">Minimalist Essential Tee</h3>
-                <p class="price">$55.00</p>
-                <button class="action-btn">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                  <span class="product-icon">👖</span>
-                </div>
-                <h3 class="product-title">Effortless Trackpants</h3>
-                <p class="price">$95.00</p>
-                <button class="action-btn">Add to Cart</button>
-            </div>
-
-        </section>
-    </main>
-</body>
-</html>
-2. The Orders Page (orders.html)
-This page functions as a customer checkout review form or an order history page. Create a new file on GitHub named orders.html and paste this in:
-
-HTML
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Your Order | Glazes</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Timups - Products</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link href="Fonts/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <style>
+        /* Temporary test to force image resizing */
+        .shop_section .box .img-box {
+            width: 100% !important;
+            height: 280px !important;
+            overflow: hidden !important;
+        }
+
+        .shop_section .box .img-box img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+    </style>
+
 </head>
 
-<body>
-    <header>
-        <h1>Glazes</h1>
-    </header>
+<body class="sub_page">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="orders.html" class="active">Orders</a></li>
-        </ul>
-    </nav>
+    <div class="hero_area">
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>Timups</span>
+                    </a>
 
-    <main>
-        <h2>Review Your Order</h2>
-        
-        <section class="order-container">
-            <div class="order-summary">
-                <h3>Shopping Bag</h3>
-                <p>Items will be reserved for a limited time.</p>
-                <hr>
-                <div class="order-item">
-                    <span>Oversized Heavyweight Hoodie (Size M)</span>
-                    <strong>$110.00</strong>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="products.html">Products <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="orders.html">Orders</a>
+                            </li>
+                        </ul>
+                        <div class="user_option-box">
+                            <a href="">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="shop_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Our Products</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/dress2.avif" alt="Dress 1">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Dress</h6>
+                                <h6>Price:<span>$26</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>Featured</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <hr>
-                <div class="order-total">
-                    <span><strong>Total (NZD)</strong></span>
-                    <strong>$110.00</strong>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/dress2.avif" alt="Dress 2">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Dress</h6>
+                                <h6>Price: <span>$30</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/jeans.jpg" alt="Jeans">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Jeans</h6>
+                                <h6>Price: <span>$45</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/hoodie.webp" alt="Hoodie">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Hoodie</h6>
+                                <h6>Price: <span>$35</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/jacket.webp" alt="Jacket">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Jacket</h6>
+                                <h6>Price: <span>$45</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/track suit.jpg" alt="Track Suit">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Track Suit</h6>
+                                <h6>Price: <span>$170</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="box">
+                        <a href="">
+                            <div class="img-box">
+                                <img src="images/track suit2.jpg" alt="Track Suit 2">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Track Suit</h6>
+                                <h6>Price: <span>$170</span></h6>
+                            </div>
+                            <div class="new">
+                                <span>New</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="checkout-form">
-                <h3>Shipping Details</h3>
-                <form>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="text" placeholder="Delivery Address" required>
-                    <button type="submit" class="action-btn">Place Order</button>
-                </form>
+            <div class="btn-box">
+                <a href="">View All</a>
             </div>
-        </section>
-    </main> 
-
-  <script>
-        document.getElementById('search-input').addEventListener('keyup', function() {
-            // 1. Get whatever the user typed and make it lowercase
-            let searchQuery = this.value.toLowerCase();
-            
-            // 2. Grab all the product cards on the page
-            let productCards = document.querySelectorAll('.product-card');
-            
-            // 3. Loop through each card to check the text
-            productCards.forEach(function(card) {
-                let title = card.querySelector('.product-title').innerText.toLowerCase();
-                
-                // 4. If the title contains the search letter/word, show it. Otherwise, hide it!
-                if (title.includes(searchQuery)) {
-                    card.style.display = "block";  // Show card
-                } else {
-                    card.style.display = "none";   // Hide card
-                }
-            });
-        });
-    </script>
+        </div>
+    </section>
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <div class="footer_detail">
+                        <h4>About</h4>
+                        <p> All clothing needs and wants.</p>
+                        <div class="footer_social">
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <div class="footer_contact">
+                        <h4>Reach at..</h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>Location</span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>Call +01 1234567890</span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>demo@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <div class="footer_contact">
+                        <h4>Subscribe</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Enter email" />
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <div class="map_container">
+                        <div class="map">
+                            <div id="googleMap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    &copy; <span id="displayYear"></span> All Rights Reserved By
+                    <a href="https://html.design/">Free Html Templates</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
 
 </body>
-</html>
-    
- 
 
+</html>
