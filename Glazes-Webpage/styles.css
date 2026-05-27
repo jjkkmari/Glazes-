@@ -1,1 +1,251 @@
+ /* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #ff80ff;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+/* || E-commerce Page Layouts */
+
+/* Products Grid Layout */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; 
+    width: 100%; 
+    margin-top: 40px; 
+    clear: both;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 4px; 
+} 
+
+.products-header { 
+    text-align: center; 
+    margin: 40px auto 20px auto; 
+    max-width: 600px; 
+} 
+
+#search-input { 
+    padding: 10px 15px; 
+    width: 250px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-family: 'Open Sans condensed', sans-serif; 
+} 
+
+#search-form { 
+    margin-top: 15px; 
+    display: inline-block;
+}
+
+.product-icon {
+    font-size: 4rem; /* Makes the icon nice and big */
+    line-height: 250px; /* Vertically centers it perfectly in your 250px box */
+    display: block;
+}
+
+.product-image-placeholder {
+    background-color: #e2e2e2;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 2px;
+} 
+
+
+.price {
+    font-weight: bold;
+    color: #2a2a2a;
+    margin: 10px 0;
+}
+
+/* Orders & Checkout Layout */
+.order-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.order-summary, .checkout-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.order-item, .order-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Universal Buttons */
+.action-btn {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #444444;
+}
+
+.active {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
 
