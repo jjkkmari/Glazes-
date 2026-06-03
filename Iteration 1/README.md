@@ -61,8 +61,8 @@ The following tasks were assigned and executed collaboratively to ensure success
 | **Group Name** | Group Collaboration | 18/03/2026 | Completed | 
 | **Project Brainstorming** | Jazmyne Kingi | 18/03/2026 | Completed | 
 | **Integration** | Group Collaboration | 18/03/2026 | Completed | 
-| **Create Stakeholder Registry | Group Collaboration | 18/03/2026 | Completed | 
-| **Discuss map & Personas | Group Collaboration | 18/03/2026| Completed | 
+| **Create Stakeholder Registry** | Group Collaboration | 18/03/2026 | Completed | 
+| **Discuss map & Personas** | Group Collaboration | 18/03/2026| Completed | 
 
 --- 
 
