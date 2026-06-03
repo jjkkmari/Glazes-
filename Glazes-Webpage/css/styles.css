@@ -1,334 +1,820 @@
- /* || General setup */
-
- html,
- body {
-   margin: 0;
-   padding: 0;
- }
-
- html {
-   font-size: 10px;
-   background-color: #a9a9a9;
- }
-
- body {
-   width: 70%;
-   margin: 0 auto;
- }
-
- /* || typography */
-
- h1,
- h2,
- h3 {
-   font-family: Georgia, serif;
-   color: #2a2a2a;
- }
-
- p,
- input,
- li {
-   font-family: 'Open Sans Condensed', sans-serif;
-   color: #2a2a2a;
- }
-
- h1 {
-   font-size: 4rem;
-   text-align: center;
-   color: white;
-   text-shadow: 2px 2px 10px black;
- }
-
- h2 {
-   font-size: 3rem;
-   text-align: center;
- }
-
- h3 {
-   font-size: 2.2rem;
- }
-
- p,
- li {
-   font-size: 1.6rem;
-   line-height: 1.5;
- }
-
- /* || header layout */
-
- nav,
- article,
- aside,
- footer {
-   background-color: white;
-   padding: 1%;
- }
-
- nav {
-   height: 50px;
-   background-color: #ff80ff;
-   display: flex;
-   margin-bottom: 10px;
- }
-
- nav ul {
-   padding: 0;
-   list-style-type: none;
-   flex: 2;
-   display: flex;
- }
-
- nav li {
-   display: inline;
-   text-align: center;
-   flex: 1;
- }
-
- nav a {
-   display: inline-block;
-   font-size: 2rem;
-   text-transform: uppercase;
-   text-decoration: none;
-   color: black;
- }
-
- nav form {
-   flex: 1;
-   display: flex;
-   align-items: center;
-   height: 100%;
-   padding: 0 2em;
- }
-
- input {
-   font-size: 1.6rem;
-   height: 32px;
- }
-
- input[type="search"] {
-   flex: 3;
- }
-
- input[type="submit"] {
-   flex: 1;
-   margin-left: 1rem;
-   background: #333;
-   border: 0;
-   color: white;
- }
-
- /* || main layout */
-
- main {
-   display: flex;
- }
-
- article {
-   flex: 4;
- }
-
- aside {
-   flex: 1;
-   margin-left: 10px;
-   background-color: #ff80ff;
- }
-
- aside li {
-   padding-bottom: 10px;
- }
-
- footer {
-   margin-top: 10px;
- }
-
- /* || E-commerce Page Layouts */
-
- /* Products Grid Layout */
- .products-grid {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-   justify-content: center;
-   width: 100%;
-   margin-top: 40px;
-   clear: both;
- }
-
- .product-card {
-   background-color: #ffffff;
-   border: 1px solid #e0e0e0;
-   padding: 20px;
-   width: 250px;
-   text-align: center;
-   border-radius: 4px;
- }
-
- /* Ensure all product images fit perfectly inside their cards */
- .product-card img {
-   width: 100%;
-   height: 250px;
-   /* Matches your template placeholder height */
-   object-fit: cover;
-   /* Crops and centers the image nicely without stretching it */
-   border-radius: 2px;
-   /* Matches your placeholder border radius */
-   display: block;
-   margin-bottom: 15px;
- }
-
- .products-header {
-   text-align: center;
-   margin: 40px auto 20px auto;
-   max-width: 600px;
- }
-
- #search-input {
-   padding: 10px 15px;
-   width: 250px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   font-family: 'Open Sans condensed', sans-serif;
- }
-
- #search-form {
-   margin-top: 15px;
-   display: inline-block;
- }
-
- .product-icon {
-   font-size: 4rem;
-   /* Makes the icon nice and big */
-   line-height: 250px;
-   /* Vertically centers it perfectly in your 250px box */
-   display: block;
- }
-
- .product-image-placeholder {
-   background-color: #e2e2e2;
-   height: 250px;
-   width: 100%;
-   margin-bottom: 15px;
-   border-radius: 2px;
- }
+/* ============================================================
+   GLAZES CLOTHING - MAIN STYLESHEET
+   styles.css
+   
+   TABLE OF CONTENTS:
+   1.  General Setup & Reset
+   2.  Typography
+   3.  Header & Navigation Layout
+   4.  Main Layout
+   5.  E-Commerce Page Layouts (Products, Search)
+   6.  Orders Page
+   7.  Orders - Color Helpers & Utilities
+   8.  Orders - Navigation Bars
+   9.  Orders - Buttons
+   10. Orders - Mobile & Drawers
+   11. Orders - Forms & Cards
+   12. Orders - Address Radio Buttons
+   13. Shop / Products Section (products.html)
+   14. About Page - Image Sizing
+   15. Contact Page - Image Sizing
+   16. Index Page - Feature Section Icons (WHY CHOOSE GLAZES)
+   ============================================================ */
 
 
- .price {
-   font-weight: bold;
-   color: #2a2a2a;
-   margin: 10px 0;
- }
+/* ============================================================
+   1. GENERAL SETUP & RESET
+   Removes default browser margin/padding and sets base styles
+   ============================================================ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
- /* Orders & Checkout Layout */
- .order-container {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 40px;
-   margin-top: 30px;
-   justify-content: space-between;
- }
+html {
+  font-size: 10px; /* Base font size — all rem units are relative to this */
+  background-color: #a9a9a9; /* Grey page background visible outside the white body */
+}
 
- .order-summary,
- .checkout-form {
-   flex: 1;
-   min-width: 300px;
-   background-color: #ffffff;
-   padding: 25px;
-   border-radius: 4px;
-   border: 1px solid #e0e0e0;
- }
+body {
+  width: 70%; /* Centres the site content to 70% of the screen width */
+  margin: 0 auto;
+}
 
- .order-item,
- .order-total {
-   display: flex;
-   justify-content: space-between;
-   margin: 15px 0;
- }
 
- form input {
-   width: 100%;
-   padding: 10px;
-   margin: 10px 0;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   box-sizing: border-box;
- }
+/* ============================================================
+   2. TYPOGRAPHY
+   Fonts, sizes, and text colours used across all pages
+   ============================================================ */
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  color: #2a2a2a;
+}
 
- /* Universal Buttons */
- .action-btn {
-   background-color: #2a2a2a;
-   color: white;
-   border: none;
-   padding: 12px 20px;
-   width: 100%;
-   cursor: pointer;
-   font-weight: bold;
-   text-transform: uppercase;
-   transition: background 0.2s;
- }
+p,
+input,
+li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
 
- .action-btn:hover {
-   background-color: #444444;
- }
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
 
- .active {
-   text-decoration: underline !important;
-   font-weight: bold;
- }
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
 
- /* Fix for your Bootstrap shop template images */
- .shop_section .box .img-box {
-   width: 100%;
-   height: 280px;
-   /* Sets a consistent block height for all images */
-   overflow: hidden;
-   /* Keeps everything clean inside the box boundaries */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: #f7f7f7;
- }
+h3 {
+  font-size: 2.2rem;
+}
 
- .shop_section .box .img-box img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   /* Scales and crops without stretching the clothes */
- }
+p,
+li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
 
- /* Shop Products Page Images */
+
+/* ============================================================
+   3. HEADER & NAVIGATION LAYOUT
+   Styles for the top nav bar and its links
+   ============================================================ */
+nav,
+article,
+aside,
+footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #ff80ff; /* Pink navbar background */
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+/* Active nav link — underlines the current page in the navbar */
+.active {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
+
+/* ============================================================
+   4. MAIN LAYOUT
+   Flex layout for article/aside side-by-side pages
+   ============================================================ */
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+
+/* ============================================================
+   5. E-COMMERCE PAGE LAYOUTS
+   Product grid, product cards, search bar, and price labels
+   ============================================================ */
+
+/* Product grid — wraps cards in a centred flex row */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  clear: both;
+}
+
+/* Individual product card */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Product card image — fixed height with cover fit */
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Header above the product grid */
+.products-header {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  max-width: 600px;
+}
+
+/* Search input field on the products page */
+#search-input {
+  padding: 10px 15px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#search-form {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* Emoji/icon fallback when no product image is available */
+.product-icon {
+  font-size: 4rem;
+  line-height: 250px;
+  display: block;
+}
+
+/* Grey placeholder box shown when a product has no image */
+.product-image-placeholder {
+  background-color: #e2e2e2;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+/* Bold price label on product cards */
+.price {
+  font-weight: bold;
+  color: #2a2a2a;
+  margin: 10px 0;
+}
+
+/* Order/checkout container — two column flex layout */
+.order-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+/* Order summary and checkout form panels */
+.order-summary,
+.checkout-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Row inside order summary showing item name and price */
+.order-item,
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+/* Full-width form inputs */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* General input sizing */
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* Dark action button used for checkout/submit */
+.action-btn {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #444444;
+}
+
+
+/* ============================================================
+   6. ORDERS PAGE
+   Styles specific to the orders.html list layout
+   ============================================================ */
+
+/* List group borders */
+.list-group {
+  border-color: #D0D5DC !important;
+}
+
+.list-group-item {
+  border-color: #D0D5DC !important;
+}
+
+/* Clickable account cards */
+a.account-card {
+  text-decoration: none;
+  color: unset;
+}
+
+a.account-card i.fa {
+  font-size: 42px;
+  width: 45px;
+}
+
+a.account-card .card {
+  background: #F9FAFB;
+  border: 1px solid #D0D5DC;
+}
+
+a.account-card .card:hover {
+  background: #FFFFFF;
+}
+
+a.account-card .card:active {
+  background: #F0F2F5;
+}
+
+/* Yellow highlight utility (e.g. promo banners) */
+.bg-yellow {
+  background: #F5D847;
+  color: #222C3A;
+}
+
+/* List group action items */
+.list-group-item-action {
+  background: #F9FAFB;
+}
+
+.list-group-item-action .fa {
+  width: 22px;
+}
+
+/* Right-aligned chevron arrow on list items */
+.list-group-item-action .fa.fa-angle-right {
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+  top: 14px;
+}
+
+/* Dashed coupon/voucher box */
+.coupon {
+  background: #F9FAFB;
+  border: 2px dashed #D0D5DC !important;
+}
+
+/* Reward/loyalty status banner */
+.reward-status-box {
+  position: relative;
+  width: 100%;
+  color: #FFFFFF;
+  background: #247593;
+  border: 2px solid #2da6d0;
+  border-radius: 5px;
+}
+
+.reward-status-box .reward-status {
+  width: 60%;
+  background: #2da6d0;
+  padding: 15px;
+}
+
+.reward-status-box .current-status {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #FFFFFF;
+}
+
+.reward-status-box .current-status-2 {
+  position: absolute;
+  right: 15px;
+  top: 41px;
+  color: #FFFFFF;
+}
+
+
+/* ============================================================
+   7. ORDERS - COLOR HELPERS & UTILITIES
+   Reusable text/background colour classes used on orders page
+   ============================================================ */
+.text-orange    { color: #EC9532 !important; }
+.text-carbon    { color: #222C3A !important; }
+.text-pebble    { color: #79879A !important; }
+.text-gray      { color: #A2ABB9 !important; }
+.text-cloud     { color: #D0D5DC !important; }
+.text-blue      { color: #49AED0 !important; }
+.text-pale-sky  { color: #A2ABB9 !important; }
+.text-charcoal  { color: #354050 !important; }
+.text-red       { color: #C62931 !important; }
+.text-green     { color: #00A362 !important; }
+.text-link-blue { color: #337ab7 !important; }
+
+.bg-black { background: #111822 !important; }
+.bg-snow  { background: #F9FAFB !important; }
+.bg-fog   { background: #F0F2F5 !important; }
+.bg-white { background: #FFFFFF !important; }
+
+/* Bottom border divider line */
+.bb1-cloud { border-bottom: 1px solid #D0D5DC; }
+
+/* Font size helpers */
+.fs-14 { font-size: 14px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-22 { font-size: 22px !important; }
+
+/* Border helpers */
+.bd-2-cloud { border: 2px dashed #D0D5DC; }
+.b-1-green  { border: 2px solid #00A362 !important; }
+.br-8       { border-radius: 5px; }
+
+
+/* ============================================================
+   8. ORDERS - NAVIGATION BARS
+   Tanga-style header and scrollable horizontal nav
+   ============================================================ */
+.tanga-header .navbar-brand {
+  margin-bottom: 5px;
+}
+
+.tanga-header .nav-link {
+  color: #A2ABB9;
+}
+
+.tanga-header .nav-link:hover {
+  color: #FFFFFF;
+}
+
+.tanga-header .nav-link:active {
+  color: #A2ABB9;
+}
+
+/* Horizontal scrollable nav — hides scrollbar visually */
+.tanga-navbar {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.tanga-navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.tanga-navbar .nav-link {
+  white-space: nowrap;
+  color: #79879A;
+}
+
+.tanga-navbar .nav-link:hover {
+  color: #354050;
+}
+
+.tanga-navbar .nav-link:active {
+  color: #79879A;
+}
+
+
+/* ============================================================
+   9. ORDERS - BUTTONS
+   Primary (red) and secondary (white) button styles
+   ============================================================ */
+
+/* Red primary button — used for View Order etc */
+.btn-primary {
+  background: #C62931;
+  border-color: #C62931;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #df3b43;
+  border-color: #df3b43;
+}
+
+/* White outlined secondary button — used for Track Shipment etc */
+.btn-secondary {
+  background: #FFFFFF !important;
+  color: #354050 !important;
+  border-color: #D0D5DC !important;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  color: #354050 !important;
+  background: #F9FAFB !important;
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+  color: #79879A !important;
+  background: #F0F2F5 !important;
+  outline: 0 !important;
+}
+
+
+/* ============================================================
+   10. ORDERS - MOBILE BOTTOM NAV & DRAWERS
+   Fixed bottom nav bar for mobile screens
+   ============================================================ */
+
+/* Fixed bottom navigation bar */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+  display: block;
+  width: 100%;
+  background: #111822;
+}
+
+.mobile-nav a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #A2ABB9;
+  font-size: 12px;
+  float: none;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 !important;
+  padding: 8px 0px 5px 0px;
+}
+
+/* Active state for the current mobile nav tab */
+.mobile-nav a.active {
+  background: #222C3A;
+  color: #FFFFFF;
+}
+
+.mobile-nav a i {
+  font-size: 23px;
+  display: block;
+  margin: 0 auto 2px auto;
+}
+
+/* Drawer that slides up from above the bottom nav */
+.bottom-drawer {
+  position: fixed;
+  bottom: 56px;
+  width: 100%;
+  border-top: 1px solid #D0D5DC;
+}
+
+
+/* ============================================================
+   11. ORDERS - FORMS & CARDS
+   Input field and card border styles for the orders page
+   ============================================================ */
+.card {
+  border-color: #D0D5DC !important;
+}
+
+.form-control {
+  background: #F9FAFB;
+  border-color: #D0D5DC !important;
+}
+
+
+/* ============================================================
+   12. ORDERS - ADDRESS RADIO BUTTONS
+   Custom styled radio buttons used on the address selection
+   ============================================================ */
+.address-radio .address-label {
+  padding: 1rem;
+  margin-bottom: 0 !important;
+}
+
+/* Hide the default browser radio button */
+.address-radio [type="radio"]:checked,
+.address-radio [type="radio"]:not(:checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Custom label that acts as the radio button */
+.address-radio [type="radio"]:checked + label,
+.address-radio [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 50px;
+  width: 100%;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #354050;
+}
+
+/* Outer circle of the custom radio button */
+.address-radio [type="radio"]:checked + label:before,
+.address-radio [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D0D5DC;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Green filled inner dot when selected */
+.address-radio [type="radio"]:checked + label:after,
+.address-radio [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #00A362;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+/* Hidden dot when not selected */
+.address-radio [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Visible dot when selected */
+.address-radio [type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hide address details when radio is not selected */
+.address-radio [type="radio"]:not(:checked) ~ label p {
+  display: none;
+}
+
+/* Show address details when radio is selected */
+.address-radio [type="radio"]:checked ~ label p {
+  display: unset;
+}
+
+
+/* ============================================================
+   13. SHOP / PRODUCTS SECTION (products.html)
+   Image containers for the product grid on the clothing page
+   ============================================================ */
+
+/* Fixed height image box — keeps all cards the same height */
 .shop_section .box .img-box {
-    width: 100%;
-    height: 280px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f7f7; 
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
 }
+
+/* Image fills the box without stretching */
 .shop_section .box .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* About Page Image */
+
+/* ============================================================
+   14. ABOUT PAGE - IMAGE SIZING
+   Keeps the about page photo a consistent, balanced size
+   ============================================================ */
+
+/* Limits the image width and centres it */
 .about_section .img-box {
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
 }
+
+/* Image fills the box proportionally */
 .about_section .img-box img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ============================================================
+   15. CONTACT PAGE - IMAGE SIZING
+   Keeps the contact page side image a consistent, balanced size
+   ============================================================ */
+
+/* Limits the image width and centres it */
+.contact_section .img-box {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Image fills the box proportionally */
+.contact_section .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Slightly rounded corners on contact image */
+}
+
+
+/* ============================================================
+   16. INDEX PAGE - FEATURE SECTION ICONS
+   Fixes the oversized icons in the "Why Choose Glazes?" section
+   The boutique, shopping bag, and delivery icons were overflowing
+   their containers — this constrains them to a fixed size
+   ============================================================ */
+
+/* Constrains the icon image to a small square box */
+.feature_section .box .img-box {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px auto; /* Centres the icon and adds space below */
+  overflow: hidden;
+}
+
+/* Icon image scales to fit inside the box without cropping */
+.feature_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* contain keeps the full icon visible unlike cover */
+}
+
+/* Centres the text below each icon */
+.feature_section .box {
+  text-align: center;
+  padding: 20px;
 } 
 
-/* Contact Page Image Fix */
-.contact_section .img-box {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+/* ============================================================
+   17. MOBILE NAVBAR FIX
+   Forces the hamburger toggle button to show on small screens
+   ============================================================ */
+
+/* Makes the hamburger button visible */
+.navbar-toggler {
+  display: block !important;
+  border: 2px solid white !important;
+  padding: 4px 8px !important;
 }
-.contact_section .img-box img {
+
+/* Makes the hamburger icon lines white so they show on pink */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Hide the full nav links on mobile, show only when toggled open */
+@media (max-width: 991px) {
+  .custom_nav-container .navbar-collapse {
+    background-color: #ff80ff;
+    padding: 10px;
+  }
+
+  .custom_nav-container .navbar-nav {
     width: 100%;
-    height: auto;
-} 
+  }
+
+  .custom_nav-container .nav-link {
+    color: white !important;
+    padding: 8px 15px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .user_option-box {
+    padding: 10px 15px;
+  }
+
+  .user_option-box a {
+    color: white !important;
+    margin-right: 15px;
+  }
+}
