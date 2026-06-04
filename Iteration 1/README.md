@@ -52,7 +52,7 @@ During the initial process, the team established project workflows and completed
 
 --- 
 
-## Contributiom 
+## Contributions 
 
 The following tasks were assigned and executed collaboratively to ensure success for Iteration 1: 
 
