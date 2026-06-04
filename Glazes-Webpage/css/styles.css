@@ -5,21 +5,16 @@
    TABLE OF CONTENTS:
    1.  General Setup & Reset
    2.  Typography
-   3.  Header & Navigation Layout
+   3.  Header Layout
    4.  Main Layout
    5.  E-Commerce Page Layouts (Products, Search)
    6.  Orders Page
-   7.  Orders - Color Helpers & Utilities
-   8.  Orders - Navigation Bars
-   9.  Orders - Buttons
-   10. Orders - Mobile & Drawers
-   11. Orders - Forms & Cards
-   12. Orders - Address Radio Buttons
-   13. Shop / Products Section (products.html)
-   14. About Page - Image Sizing
-   15. Contact Page - Image Sizing
-   16. Index Page - Feature Section Icons (WHY CHOOSE GLAZES)
-   ============================================================ */
+   7.  Shop / Products Section (products.html)
+   8.  About Page - Image Sizing
+   9.  Contact Page - Image Sizing 
+   10. Index Page - Feature Section Icons (WHY CHOOSE GLAZES)
+   11. mobile nav
+   ============================================================ }
 
 
 /* ============================================================
@@ -85,57 +80,14 @@ li {
 
 
 /* ============================================================
-   3. HEADER & NAVIGATION LAYOUT
+   3. HEADER & layout
    Styles for the top nav bar and its links
    ============================================================ */
-nav,
 article,
 aside,
 footer {
   background-color: white;
   padding: 1%;
-}
-
-nav {
-  height: 50px;
-  background-color: #ff80ff; /* Pink navbar background */
-  display: flex;
-  margin-bottom: 10px;
-}
-
-nav ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-nav a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-nav form {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2em;
-}
-
-/* Active nav link — underlines the current page in the navbar */
-.active {
-  text-decoration: underline !important;
-  font-weight: bold;
 }
 
 
@@ -418,10 +370,9 @@ a.account-card .card:active {
 }
 
 
-/* ============================================================
-   7. ORDERS - COLOR HELPERS & UTILITIES
+/* ORDERS - COLOR HELPERS & UTILITIES
    Reusable text/background colour classes used on orders page
-   ============================================================ */
+   */
 .text-orange    { color: #EC9532 !important; }
 .text-carbon    { color: #222C3A !important; }
 .text-pebble    { color: #79879A !important; }
@@ -453,53 +404,9 @@ a.account-card .card:active {
 .br-8       { border-radius: 5px; }
 
 
-/* ============================================================
-   8. ORDERS - NAVIGATION BARS
-   Tanga-style header and scrollable horizontal nav
-   ============================================================ */
-.tanga-header .navbar-brand {
-  margin-bottom: 5px;
-}
-
-.tanga-header .nav-link {
-  color: #A2ABB9;
-}
-
-.tanga-header .nav-link:hover {
-  color: #FFFFFF;
-}
-
-.tanga-header .nav-link:active {
-  color: #A2ABB9;
-}
-
-/* Horizontal scrollable nav — hides scrollbar visually */
-.tanga-navbar {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.tanga-navbar::-webkit-scrollbar {
-  display: none;
-}
-
-.tanga-navbar .nav-link {
-  white-space: nowrap;
-  color: #79879A;
-}
-
-.tanga-navbar .nav-link:hover {
-  color: #354050;
-}
-
-.tanga-navbar .nav-link:active {
-  color: #79879A;
-}
-
 
 /* ============================================================
-   9. ORDERS - BUTTONS
+   ORDERS - BUTTONS
    Primary (red) and secondary (white) button styles
    ============================================================ */
 
@@ -536,57 +443,10 @@ a.account-card .card:active {
 }
 
 
-/* ============================================================
-   10. ORDERS - MOBILE BOTTOM NAV & DRAWERS
-   Fixed bottom nav bar for mobile screens
-   ============================================================ */
-
-/* Fixed bottom navigation bar */
-.mobile-nav {
-  position: fixed;
-  bottom: 0;
-  z-index: 50;
-  display: block;
-  width: 100%;
-  background: #111822;
-}
-
-.mobile-nav a {
-  text-decoration: none !important;
-  cursor: pointer;
-  color: #A2ABB9;
-  font-size: 12px;
-  float: none;
-  width: 20%;
-  display: inline-block;
-  text-align: center;
-  margin: 0 !important;
-  padding: 8px 0px 5px 0px;
-}
-
-/* Active state for the current mobile nav tab */
-.mobile-nav a.active {
-  background: #222C3A;
-  color: #FFFFFF;
-}
-
-.mobile-nav a i {
-  font-size: 23px;
-  display: block;
-  margin: 0 auto 2px auto;
-}
-
-/* Drawer that slides up from above the bottom nav */
-.bottom-drawer {
-  position: fixed;
-  bottom: 56px;
-  width: 100%;
-  border-top: 1px solid #D0D5DC;
-}
 
 
 /* ============================================================
-   11. ORDERS - FORMS & CARDS
+   . ORDERS - FORMS & CARDS
    Input field and card border styles for the orders page
    ============================================================ */
 .card {
@@ -600,7 +460,7 @@ a.account-card .card:active {
 
 
 /* ============================================================
-   12. ORDERS - ADDRESS RADIO BUTTONS
+   . ORDERS - ADDRESS RADIO BUTTONS
    Custom styled radio buttons used on the address selection
    ============================================================ */
 .address-radio .address-label {
@@ -679,7 +539,7 @@ a.account-card .card:active {
 
 
 /* ============================================================
-   13. SHOP / PRODUCTS SECTION (products.html)
+   7. SHOP / PRODUCTS SECTION (products.html)
    Image containers for the product grid on the clothing page
    ============================================================ */
 
@@ -703,7 +563,7 @@ a.account-card .card:active {
 
 
 /* ============================================================
-   14. ABOUT PAGE - IMAGE SIZING
+   8. ABOUT PAGE - IMAGE SIZING
    Keeps the about page photo a consistent, balanced size
    ============================================================ */
 
@@ -725,7 +585,7 @@ a.account-card .card:active {
 
 
 /* ============================================================
-   15. CONTACT PAGE - IMAGE SIZING
+   9. CONTACT PAGE - IMAGE SIZING
    Keeps the contact page side image a consistent, balanced size
    ============================================================ */
 
@@ -748,7 +608,7 @@ a.account-card .card:active {
 
 
 /* ============================================================
-   16. INDEX PAGE - FEATURE SECTION ICONS
+   10. INDEX PAGE - FEATURE SECTION ICONS
    Fixes the oversized icons in the "Why Choose Glazes?" section
    The boutique, shopping bag, and delivery icons were overflowing
    their containers — this constrains them to a fixed size
@@ -775,46 +635,57 @@ a.account-card .card:active {
   padding: 20px;
 } 
 
-/* ============================================================
-   17. MOBILE NAVBAR FIX
-   Forces the hamburger toggle button to show on small screens
-   ============================================================ */
-
-/* Makes the hamburger button visible */
-.navbar-toggler {
-  display: block !important;
-  border: 2px solid white !important;
-  padding: 4px 8px !important;
-}
-
-/* Makes the hamburger icon lines white so they show on pink */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-/* Hide the full nav links on mobile, show only when toggled open */
-@media (max-width: 991px) {
-  .custom_nav-container .navbar-collapse {
-    background-color: #ff80ff;
-    padding: 10px;
+/* =============================================================
+    11.Mobile Nav 
+    Adjusts the body width to 100% on smaller screens for better mobile navigation
+================================================================= */ 
+    @media (max-width: 991px) {
+  body {
+    width: 100%;
   }
+}
 
-  .custom_nav-container .navbar-nav {
+/* ============================================================
+   11. MOBILE NAV FIX
+   ============================================================ */
+@media (max-width: 991px) {
+  body {
     width: 100%;
   }
 
-  .custom_nav-container .nav-link {
-    color: white !important;
-    padding: 8px 15px !important;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+  .header_section {
+    display: block !important;
+    background-color: #fff;
+    padding: 10px 0;
   }
 
-  .user_option-box {
-    padding: 10px 15px;
+  .custom_nav-container {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .user_option-box a {
-    color: white !important;
-    margin-right: 15px;
+  .navbar-toggler {
+    display: block !important;
+    border: 1px solid #333;
   }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+/* ============================================================
+   12. PRODUCT IMAGE CONSISTENT HEIGHT
+   ============================================================ */
+.shop_section .box .img-box {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.shop_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
